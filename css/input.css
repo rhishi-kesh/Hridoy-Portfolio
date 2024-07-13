@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    body{
+        @apply font-primary text-xl text-black bg-[#E4E6EB];
+    }
+
+    a{
+        @apply text-sm md:text-xl hover:text-primary transition-all duration-300;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        @apply font-primary text-primary;
+    }
+
+    .h1{
+         @apply text-[28px] sm:text-[32px] lg:text-[62px] leading-none;
+    }
+
+    .h2{
+        @apply text-[50px] leading-tight;
+    }
+
+   .h3{
+        @apply text-[25px];
+    }
+
+    p {
+        @apply text-xl;
+    }
+
+    .btn {
+        @apply h-[50px] w-[180px] px-[5px] transition-all duration-500 text-black rounded-[10px] flex items-center gap-2 justify-center;
+    }
+
+    .btn-shadow {
+        @apply shadow-2xl inset-5 hover:bg-primary hover:text-[#fff];
+    }
+
+    .btn-primary {
+        @apply bg-primary hover:bg-black text-[#fff];
+    }
+
+    .btn-black {
+        @apply bg-black hover:bg-primary text-[#fff];
+    }
+}
+.active-nav{
+    @apply h-[350px] p-6;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    @apply bg-primary;
+}
