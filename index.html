@@ -25,18 +25,22 @@
 			<a href="">
 				<img src="assets/logo.png" alt="Logo" class="w-[125px]">
 			</a>
+			
 			<!-- nav -->
 			 <nav>
 				<!-- Mobile Triger -->
 				<div class="cursor-pointer lg:hidden" id="nav_triger_btn">
 					<svg  xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep text-primary"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6h16" /><path d="M7 12h13" /><path d="M10 18h10" /></svg>
 				</div>
-				<ul class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 xl:gap-8 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300" id="nav_menu">
+				<ul class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 xl:gap-8 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300 items-center" id="nav_menu">
 					<li>
 						<a href="#">Home</a>
 					</li>
 					<li>
 						<a href="#">About Me</a>
+					</li>
+					<li>
+						<a href="#">Services</a>
 					</li>
 					<li>
 						<a href="#">Portfolio</a>
@@ -47,6 +51,12 @@
 					<li>
 						<a href="#">Contact</a>
 					</li>
+					<li>
+						<a href="" class="btn btn-shadow btn-primary">
+							<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-download"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
+							Download CV
+						</a>
+					</li>
 				</ul>
 			 </nav>
 		</div>
@@ -54,78 +64,337 @@
 
 	<!-- Page wrapper -->
 	 <main class="max-w-[1920px] mx-auto overflow-hidden">
-		<section class="hero bg-white h-[86vh] relative">
+		<!-- Hero -->
+		<section class="hero bg-white h-[52vh] md:h-[86vh] relative overflow-hidden">
 			<div class="container mx-auto">
 				<div class="grid grid-cols-1 md:grid-cols-6 justify-between items-center">
-					<div class="col-span-4 text-center md:text-start">
-						<h1 class="h1 text-black font-bold mt-[60px] md:mt-0">
+					<div class="col-span-4 text-center md:text-start order-2 md:order-1">
+						<h1 class="h1 text-black font-bold">
 							<span class="block">I'm Rhishi Kesh Bhowmik</span>
 							<span class="text-primary mt-2" id="typed"></span>
 						</h1>
 						<p class="max-w-[650px] mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum velit porro nesciunt quia consequatur, id alias voluptates! Tempora, culpa!</p>
 						<div class="justify-center md:justify-start gap-4 flex">
-							<a href="" class="btn btn-shadow mt-5 btn-black">
-								<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-download"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
-								Download CV
-							</a>
 							<a href="" class="btn btn-shadow mt-5 btn-primary">
 								<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-briefcase"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" /><path d="M12 12l0 .01" /><path d="M3 13a20 20 0 0 0 18 0" /></svg>
 								Hire Me
 							</a>
+							<a href="" class="btn btn-shadow mt-5 btn-black">
+								<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user-scan"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 9a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M4 8v-2a2 2 0 0 1 2 -2h2" /><path d="M4 16v2a2 2 0 0 0 2 2h2" /><path d="M16 4h2a2 2 0 0 1 2 2v2" /><path d="M16 20h2a2 2 0 0 0 2 -2v-2" /><path d="M8 16a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2" /></svg>
+								Portfolio
+							</a>
 						</div>
 					</div>
-					<div class="col-span-2 flex justify-center items-center text-center">
-						<img class="w-[350px]" style="max-width: unset;" src="assets/me/me1.png" alt="">
+					<div class="col-span-2 flex justify-center items-center text-center order-1 md:order-2">
+						<img class="size-24 md:w-[450px] md:h-auto object-cover object-top rounded-full md:rounded-none mt-[50px] md:mt-0 mb-6 md:mb-0 bg-gray-200 md:bg-transparent" style="max-width: unset;" src="assets/me/me1.png" alt="">
 					</div>
 				</div>
 			</div>
 			<div class="absolute top-10 left-10 border-green-500 border-2 size-6 animate-spin md:block hidden"></div>
 			<div class="absolute bottom-12 left-28 border-purple-500 border-2 size-6 animate-pulse rounded-full md:block hidden"></div>
 			<div class="absolute top-12 right-28 border-indigo-500 border-2 size-6 animate-pulse rounded-full md:block hidden"></div>
-			<div class="absolute bottom-10 right-28 border-emerald-500 border-2 size-6 animate-spin md:block hidden"></div>
+			<div class="absolute bottom-10 right-28 border-red-500 border-2 size-6 animate-spin md:block hidden"></div>
 			<div class="absolute bottom-[100px] right-[39%] border-lime-500 border-2 size-6 animate-pulse rounded-full md:block hidden"></div>
 			<div class="absolute top-[40px] right-[39%] border-orange-500 border-2 size-6 animate-bounce md:block hidden"></div>
-			<div class="absolute bottom-[68px] right-[66%] border-primary border-2 size-6 animate-bounce md:block hidden"></div>
+			<div class="absolute bottom-[50px] right-[66%] border-primary border-2 size-6 animate-bounce md:block hidden"></div>
+		</section>
+
+		<!-- About me -->
+		<section class="about my-16 lg:my-24">
+			<div class="container mx-auto">
+				<div class="text-center mb-8">
+					<h1 class="h2 font-bold uppercase">About Me</h1>
+				</div>
+				<div class="grid grid-cols-1 lg:grid-cols-6 gap-5">
+					<div class="col-span-4 rounded-lg p-4 bg-white shadow-2xl hover:shadow-none transition-all duration-300">
+						<h3 class="h3 mb-4 font-bold">Job Experience</h3>
+						<div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+							<div>
+								<div class="flex justify-between items-center">
+									<p class="text-sm">2022 - 2023</p>
+									<p class="text-sm" class="text-end">1.5 Year</p>
+								</div>
+								<h4 class="my-1 text-xl font-bold text-black">Hi-Tech IT Institute</h4>
+								<p class="text-sm">Lakshmipur, Bangladesh</p>
+							</div>
+							<div>
+								<div class="flex justify-between items-center">
+									<p class="text-sm">2023 - 2024</p>
+									<p class="text-sm" class="text-end">1 Year</p>
+								</div>
+								<h4 class="my-1 text-xl font-bold text-black">Rayhan's ICT</h4>
+								<p class="text-sm">Dhaka, Bangladesh</p>
+							</div>
+						</div>
+					</div>
+					<div class="lg:col-span-2 col-span-4 rounded-lg p-4 bg-white shadow-2xl hover:shadow-none transition-all duration-300">
+						<h3 class="h3 mb-4 font-bold">Skills On</h3>
+						<div class="grid grid-cols-6 gap-2">
+							<img class="w-[50px] block" src="assets/skill/1.png" alt="">
+							<img class="w-[50px] block" src="assets/skill/2.png" alt="">
+							<img class="w-[50px] block" src="assets/skill/3.png" alt="">
+							<img class="w-[50px] block" src="assets/skill/4.png" alt="">
+						</div>
+					</div>
+					<div class="lg:col-span-2 col-span-4 rounded-lg p-4 bg-white shadow-2xl hover:shadow-none transition-all duration-300">
+						<h3 class="h3 mb-4 font-bold">Achievements</h3>
+						<div class="grid grid-cols-2 gap-2">
+							<div>
+								<p class="font-bold ">1050 +</p>
+								<p class="">Happy Clients</p>
+							</div>
+							<div>
+								<p class="font-bold ">950 +</p>
+								<p class="">Complete Project</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-span-4 rounded-lg p-4 bg-white shadow-2xl hover:shadow-none transition-all duration-300">
+						<h3 class="h3 mb-4 font-bold">Education</h3>
+						<div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+							<div>
+								<div class="flex justify-between items-center">
+									<p class="text-sm">2013 - 2019</p>
+									<p class="text-sm" class="text-end">Grade:  3.10</p>
+								</div>
+								<h4 class="my-1 text-xl font-bold text-black">Secondary School Certificate</h4>
+								<p class="text-sm">Otherhat High School</p>
+							</div>
+							<div>
+								<div class="flex justify-between items-center">
+									<p class="text-sm">2019 - 2023</p>
+									<p class="text-sm" class="text-end">Grade:  3.54</p>
+								</div>
+								<h4 class="my-1 text-xl font-bold text-black">Diploma In Engineering</h4>
+								<p class="text-sm">Lakshmipur Polytechnic Institute</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-span-4 rounded-lg p-4 bg-white shadow-2xl hover:shadow-none transition-all duration-300">
+						<h3 class="h3 mb-4 font-bold">About Me</h3>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex harum perspiciatis, veniam rem explicabo vitae aliquid beatae exercitationem sequi accusamus quibusdam distinctio labore dolore expedita nemo numquam velit et aspernatur! Iure ducimus velit numquam illo.</p>
+					</div>
+					<div class="lg:col-span-2 col-span-4 rounded-lg p-4 bg-white shadow-2xl hover:shadow-none transition-all duration-300">
+						<h3 class="h3 mb-4 font-bold">Follow Me</h3>
+						<div class="grid grid-cols-6 gap-2">
+							<img class="w-[40px] block" src="assets/social icon/gmail.png" alt="">
+							<img class="w-[40px] block" src="assets/social icon/linkedin.png" alt="">
+							<img class="w-[40px] block" src="assets/social icon/facebook.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Service -->
+		<section class="service my-16 lg:my-24">
+			<div class="container mx-auto">
+				<div class="text-center mb-8">
+					<h1 class="h2 font-bold uppercase">What I Do</h1>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+					<div class="rounded-lg p-4 flex justify-between items-center gap-5 bg-white shadow-2xl hover:shadow-none transition-all duration-300">
+						<img src="assets/service/3.png" alt="" class="w-[50px] md:w-[80px]">
+						<div class="flex flex-col gap-1">
+							<h3 class="text-primary font-medium h3">Graphic Design</h3>
+							<p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eveniet quos delectus?</p>
+						</div>
+					</div>
+					<div class="rounded-lg p-4 flex justify-between items-center gap-5 bg-white  shadow-2xl hover:shadow-none transition-all duration-300">
+						<img src="assets/service/2.png" alt="" class="w-[50px] md:w-[80px]">
+						<div class="flex flex-col gap-1">
+							<h3 class="text-primary font-medium h3"> Motion Graphic Design</h3>
+							<p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eveniet quos delectus?</p>
+						</div>
+					</div>
+					<div class="rounded-lg p-4 flex justify-between items-center gap-5 bg-white  shadow-2xl hover:shadow-none transition-all duration-300">
+						<img src="assets/service/1.png" alt="" class="w-[50px] md:w-[80px]">
+						<div class="flex flex-col gap-1">
+							<h3 class="text-primary font-medium h3">Banner Design</h3>
+							<p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eveniet quos delectus?</p>
+						</div>
+					</div>
+					<div class="rounded-lg p-4 flex justify-between items-center gap-5 bg-white  shadow-2xl hover:shadow-none transition-all duration-300">
+						<img src="assets/service/4.png" alt="" class="w-[50px] md:w-[80px]">
+						<div class="flex flex-col gap-1">
+							<h3 class="text-primary font-medium h3">Flyer Design</h3>
+							<p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eveniet quos delectus?</p>
+						</div>
+					</div>
+					<div class="rounded-lg p-4 flex justify-between items-center gap-5 bg-white  shadow-2xl hover:shadow-none transition-all duration-300">
+						<img src="assets/service/5.png" alt="" class="w-[50px] md:w-[80px]">
+						<div class="flex flex-col gap-1">
+							<h3 class="text-primary font-medium h3">Book Covers Design</h3>
+							<p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eveniet quos delectus?</p>
+						</div>
+					</div>
+					<div class="rounded-lg p-4 flex justify-between items-center gap-5 bg-white  shadow-2xl hover:shadow-none transition-all duration-300">
+						<img src="assets/service/6.png" alt="" class="w-[50px] md:w-[80px]">
+						<div class="flex flex-col gap-1">
+							<h3 class="text-primary font-medium h3">Packaging & 
+								Label Design</h3>
+							<p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eveniet quos delectus?</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Portfolio -->
+		<section class="service my-16 lg:my-24">
+			<div class="container mx-auto">
+			  	<div class="max-w-xl mx-auto mb-6 lg:mb-6 text-center">
+					<div class="text-center mb-8">
+						<h1 class="h2 font-bold uppercase">My Portfolio</h1>
+					</div>
+					<div class="flex">
+					<div class="w-auto mx-auto py-1 px-4 bg-white shadow-lg rounded-md">
+						<button class="px-4 py-3 mb-2 lg:mb-0 mr-4 text-sm font-semibold text-white bg-primary rounded-md shadow">Product Design</button>
+						<button x-ref="cat2" class="px-4 py-3 mb-2 lg:mb-0 mr-4 text-sm font-semibold text-gray-500 hover:text-gray-900 rounded-md">Management</button>
+						<button x-ref="cat3" class="px-4 py-3 mb-2 lg:mb-0 mr-4 text-sm font-semibold text-gray-500 hover:text-gray-900 rounded-md">Front-end</button>
+						<button x-ref="cat4" class="px-4 py-3 text-sm font-semibold text-gray-500 hover:text-gray-900 rounded-md">Back-end</button>
+					</div>
+					</div>
+			  	</div>
+				<div class="grid grid-cols-2 mb-5">
+					<div class="w-full h-auto p-3">
+						<img class="w-full h-full object-cover rounded-lg" src="https://img.freepik.com/premium-photo/influencer-marketing-job-concept_23-2150410542.jpg?semt=sph" alt="">
+					</div>
+					<div class="w-full h-auto p-3">
+						<img class="w-full h-full object-cover rounded-lg" src="https://img.freepik.com/free-photo/full-shot-woman-reading-with-smartphone_23-2149629602.jpg?semt=sph" alt="">
+					</div>
+					<div class="w-full h-auto p-3">
+						<img class="w-full h-full object-cover rounded-lg" src="https://img.freepik.com/premium-photo/sale-products-with-discount_23-2150296283.jpg?semt=sph" alt="">
+					</div>
+					<div class="w-full h-auto p-3">
+						<img class="w-full h-full object-cover rounded-lg" src="https://img.freepik.com/free-photo/nature-abstract-autumn-illustration-leaf-season-tree-generative-ai_188544-9376.jpg?semt=sph" alt="">
+					</div>
+				</div>
+				<div class="flex justify-center">
+				  <a class="btn btn-shadow btn-primary" href="#">Load More</a>
+			  </div>
+			</div>
+		</section>
+
+		<!-- Blog -->
+		<section class="blog my-16">
+			<div class="container mx-auto">
+				<div class="text-center mb-8">
+				<h1 class="h2 font-bold uppercase">Blogs</h1>
+			  </div>
+			  <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+				<div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto group">
+				  <div class="bg-gray-300 h-56 w-full rounded-lg shadow-md group-hover:shadow-none transition-all duration-300 bg-cover bg-center" style="background-image: url(https://images.unsplash.com/photo-1521185496955-15097b20c5fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80)"></div>
+	  
+				  <div class=" w-70 bg-white -mt-10 shadow-lg group-hover:shadow-none transition-all duration-300 rounded-lg overflow-hidden p-5">
+					<h3 class="h3 mb-2 title-post font-medium">Blog Title</h3>
+	  
+					<div class="summary-post text-base text-justify">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis veritatis vel suscipit ex dolore possimus iure. 
+					  <a href="" class="w-full mt-3 btn btn-shadow btn-primary !h-[40px]"><span class="">Read More</span></a>
+					</div>
+				   
+				  </div>
+				</div>
+				<div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto group">
+				  <div class="bg-gray-300 h-56 w-full rounded-lg shadow-md group-hover:shadow-none transition-all duration-300 bg-cover bg-center" style="background-image: url(https://images.unsplash.com/photo-1590608897129-79da98d15969?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80)"></div>
+	  
+				  <div class=" w-70 bg-white -mt-10 shadow-lg group-hover:shadow-none transition-all duration-300 rounded-lg overflow-hidden p-5">
+					<h3 class="h3 mb-2 title-post font-medium">Blog Title</h3>
+	  
+					<div class="summary-post text-base text-justify">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis veritatis vel suscipit ex dolore possimus iure. 
+					  <a href="" class="w-full mt-3 btn btn-shadow btn-primary !h-[40px]"><span class="">Read More</span></a>
+					</div>
+				   
+				  </div>
+				</div>
+				<div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto group">
+				  <div class="bg-gray-300 h-56 w-full rounded-lg group-hover:shadow-none transition-all duration-300 shadow-md bg-cover bg-center" style="background-image: url(https://images.unsplash.com/photo-1543966888-7c1dc482a810?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80)"></div>
+	  
+				  <div class=" w-70 bg-white -mt-10 shadow-lg group-hover:shadow-none transition-all duration-300 rounded-lg overflow-hidden p-5">
+					<h3 class="h3 mb-2 title-post font-medium">Blog Title</h3>
+	  
+					<div class="summary-post text-base text-justify">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis veritatis vel suscipit ex dolore possimus iure. 
+					  <a href="" class="w-full mt-3 btn btn-shadow btn-primary !h-[40px]"><span class="">Read More</span></a>
+					</div>
+				   
+				  </div>
+				</div>
+			  </div>
+			  	<div class="flex justify-center mt-5">
+					<a class="btn btn-shadow btn-primary" href="#">Load More</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact -->
+		<section class="contact my-16 lg:my-24">
+			<div class="container mx-auto">
+				<div class="p-8 mx-auto max-w-4xl bg-white shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md text-black">
+					<h1 class="h2 font-bold uppercase text-center mb-10">Contact With Me</h1>
+					<div class="grid sm:grid-cols-2 items-center gap-16 ">
+						<form class="ml-auo space-y-4">
+							<input type='text' placeholder='Your Name'
+								class="w-full rounded-md py-2.5 px-4 border text-sm" />
+							<input type='email' placeholder='Your Email'
+								class="w-full rounded-md py-2.5 px-4 border text-sm" />
+							<input type='number' placeholder='Your Number'
+								class="w-full rounded-md py-2.5 px-4 border text-sm" />
+							<textarea placeholder='Your Message' rows="6"
+								class="w-full rounded-md px-4 border text-sm pt-2.5"></textarea>
+							<button type='button'
+								class="btn btn-shadow btn-primary w-full shadow-sm">Submit</button>
+						</form>
+						<div class="text-center md:text-left">
+							<h2 class="h3 mb-2">Address</h2>
+							<div class="flex justify-center md:justify-start items-center gap-2">
+								<svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-home-link"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20.085 11.085l-8.085 -8.085l-9 9h2v7a2 2 0 0 0 2 2h4.5" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 1.807 1.143" /><path d="M21 21m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M21 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M16 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M21 16l-5 3l5 2" /></svg>
+								<p>: Mirpur, Dhaka</p>
+							</div>
+							<h2 class="h3 mb-2 mt-5">Email</h2>
+							<div class="flex justify-center md:justify-start items-center gap-2">
+								<svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" /><path d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" /></svg>
+								<p>: reshikash300@gmail.com</p>
+							</div>
+							<h2 class="h3 mb-2 mt-5">Phone</h2>
+							<div class="flex justify-center md:justify-start items-center gap-2">
+								<svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-phone"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /></svg>
+								<p>: 01629005842</p>
+							</div>
+							<h2 class="h3 mb-2 mt-5">Social</h2>
+							<div class="flex justify-center md:justify-start items-center gap-2">
+								<div class="grid grid-cols-3 gap-3">
+									<img class="w-[40px]" src="assets/social icon/gmail.png" alt="">
+									<img class="w-[40px]" src="assets/social icon/linkedin.png" alt="">
+									<img class="w-[40px]" src="assets/social icon/facebook.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 	 </main>
 
-	<!-- footer -->
-	<footer class="contact mt-[80px] xl:mt-[150px] relative z-20">
-		<div class="container mx-auto px-0">
-			<div class="flex flex-col xl:flex-row xl:gap-[100px] xl:mb-[150px]">
-				<div class="footer__item w-full max-w-[400px] mx-auto mb-8 text-center">
-					<a class="flex justify-center mb-8 " href="">
-						<img src="assets/logo.png" alt="" class="w-[125px]">
-					</a>
-					<p class="mb-8 text-xl ">It is a long established fact that a reader will be distracted lookings.</p>
-					<ul class="text-primary gap-[54px] flex justify-center">
-						<li>
-							<a href="">
-								<i class="ri-facebook-fill"></i>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<i class="ri-twitter-fill"></i>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<i class="ri-linkedin-fill"></i>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<i class="ri-instagram-fill"></i>
-							</a>
-						</li>
-					</ul>
+	 <!-- footer -->
+	 <footer class="footer bg-white py-4">
+		<div class="container mx-auto">
+			<div class="flex justify-between items-center">
+				<p class="text-sm">&copy; 2024 Artisan Hridoy</p>
+				<div class="flex justify-start items-center gap-4">
+					<p class="text-sm">Follow: </p>
+					<div class="grid grid-cols-3 gap-3">
+						<img class="w-[15px]" src="assets/social icon/gmail.png" alt="">
+						<img class="w-[15px]" src="assets/social icon/linkedin.png" alt="">
+						<img class="w-[15px]" src="assets/social icon/facebook.png" alt="">
+					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
 
-  <script src="js/scrollreveal.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
   <script src="js/main.js"></script>

@@ -25,10 +25,6 @@ module.exports = {
 				DEFAULT: '#D50056',
 				hover: '#D50056',
 			},
-			white: {
-				DEFAULT: '#f2f3f4',
-				hover: '#f2f3f4',
-			},
 			black: {
 				DEFAULT: '#060D0D',
 				hover: '#060D0D',
